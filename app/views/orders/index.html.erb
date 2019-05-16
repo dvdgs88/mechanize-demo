@@ -1,0 +1,8 @@
+<table border="0" width="100%">
+  <% @orders.each do |order| %>
+    <tr>
+      <td width="20%"><%= image_tag(order.image) %></td>
+      <td width="80%"><%= order.title %></td>
+    </tr>
+  <% end %>
+</table>

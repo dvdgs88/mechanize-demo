@@ -1,0 +1,8 @@
+<table border="0" width="100%">
+  <% @products.each do |product| %>
+    <tr>
+      <td width="30%"><%= link_to(product.title, product.uri, target: '_blank') %></td>
+      <td width="70%"><b><%= product.price %></b></td>
+    </tr>
+  <% end %>
+</table>

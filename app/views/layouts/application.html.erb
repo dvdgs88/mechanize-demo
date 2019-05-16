@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MechanizeDemo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <p><h2><%= link_to('Products', products_path) %></h2> <h2><%= link_to('Orders', orders_path) %></h2></p>
+    <%= yield %>
+  </body>
+</html>
